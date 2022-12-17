@@ -1,0 +1,193 @@
+.navbar{ /* Cor da NAVBAR */
+    background-color: #141a29;
+}
+
+.titulo { /* Estilo do titulo (Sorteio) navbar */
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.display{ /* Ocultar elementos da tela */
+    display: none;
+}
+
+                                            /*TELA ADICIONAR NOMES*/
+
+h1{ /* Estilo do <h1> */
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    background-image:linear-gradient(to left, #426cc7 10%, #141a29 80%);
+    margin-top: 5%;
+    width: 80%;
+    border-radius: 15px;
+    -webkit-box-shadow: 2px 4px 6px rgba(50, 50, 50, 0.77); 
+    -moz-box-shadow: 2px 4px 6px rgba(50, 50, 50, 0.77); 
+    box-shadow: 2px 4px 6px rgba(50, 50, 50, 0.77); 
+}
+
+.divAdicionarNome{ /* Estilo da Tela Adicionar Nomes */
+    position: fixed;
+    left: 0;
+    padding-top: 0px;
+    background-image:linear-gradient(to bottom, #3050a1 50%, #141a29 100%);
+    height: calc(100vh);
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+    -webkit-box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+    box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+    -webkit-transition: .3s all ease-in-out;
+    -o-transition: .3s all ease-in-out;
+    transition: .3s all ease-in-out;
+    width: 100%;
+}
+
+.esconderTelaNovoPalpite{ /* Esconde Tela Adicionar Nomes */
+    -webkit-transform: translateX(-110%);
+    -ms-transform: translateX(-110%);
+    transform: translateX(-110%); 
+    -webkit-transition: .9s all ease-in-out;
+    -o-transition: .9s all ease-in-out;
+    transition: .9s all ease-in-out;
+}
+
+fieldset{ /* Estilo do Fildset (Adicionar Nomes) */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 90%;
+    height: relative;
+    border-radius: 5%;
+    -webkit-box-shadow: 2px 4px 6px rgba(50, 50, 50, 0.77); 
+    -moz-box-shadow: 2px 4px 6px rgba(50, 50, 50, 0.77); 
+    box-shadow: 2px 4px 6px rgba(50, 50, 50, 0.77); 
+}
+
+.divMultiplier{ /* div do input type number */
+    display: flex;
+    justify-content: center;
+    margin-inline: 10%;
+}
+
+#multiplier{ /* input type number */
+    width: 30%;
+    text-align: center;
+}
+
+.divMultiplier svg { /* estilo das setas svg */
+    width: 25px;
+    height: 25px;
+    margin-top: 7px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: solid white;
+    -webkit-box-shadow: 2px 4px 6px rgba(50, 50, 50, 0.77); 
+    -moz-box-shadow: 2px 4px 6px rgba(50, 50, 50, 0.77); 
+    box-shadow: 2px 4px 6px rgba(50, 50, 50, 0.77);
+}
+
+.campos{ /* Largura dos campos */
+    width: 80%;
+    text-align: center;
+}
+
+.btn-adicionar{ /* Botão de Adicionar */
+    width: 30%;
+    margin-bottom: 5%;
+    -webkit-box-shadow: 2px 4px 6px rgba(50, 50, 50, 0.77); 
+    -moz-box-shadow: 2px 4px 6px rgba(50, 50, 50, 0.77); 
+    box-shadow: 2px 4px 6px rgba(50, 50, 50, 0.77);
+}
+
+.sombra{ /* Sombra nos elementos */
+    -webkit-box-shadow: 2px 4px 6px rgba(50, 50, 50, 0.77); 
+    -moz-box-shadow: 2px 4px 6px rgba(50, 50, 50, 0.77); 
+    box-shadow: 2px 4px 6px rgba(50, 50, 50, 0.77); 
+}
+
+.luck { /* tamanho do trevo sortear */
+    width: 70px;
+}
+
+.luckImg { /* div luckImg */
+    color: white;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-style: italic;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+}
+
+
+
+                                            /*TELA LISTA DE NOMES*/
+
+.divLista{ /* Estilo da Tela Lista de Nomes */
+    position: fixed;
+    left: 0;
+    padding-top: 0px;
+    background-image:linear-gradient(to bottom, #3050a1 50%, #141a29 100%);
+    height: 100vh;
+    -webkit-transform: translateX(110%);
+    -ms-transform: translateX(110%);
+    transform: translateX(110%);
+    -webkit-box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+    box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
+    -webkit-transition: .4s all ease-in-out;
+    -o-transition: .4s all ease-in-out;
+    transition: .4s all ease-in-out;
+    width: 100vw;
+    overflow: auto;
+}
+
+.listFixa{ /* Fixa a Lista de Nomes */
+    position: fixed;
+    margin-top: 15%;
+    width: 100vw;
+}
+
+.formSearch { /* Form de pesquisa */
+    width: 90%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.table{ /* Estilo da tabela (Lista) */
+    width: 90%;
+    margin-bottom: 10%;
+    font-size: 10px;
+    align-items: center;
+    
+}
+
+.thead { /* background da tabela lista de nomes */
+    background-color: #141a29;
+}
+
+#idTitulo{ /* Estilo do Texto (Titulo) na lista */
+    margin-top: 0.5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.trash { /* estilo da lixeira */
+    margin-top: 4px;
+    margin-left: 0px;
+    height: 15px;
+}
+
+.trash:hover { /* (Click) cor de fundo da lixeira */
+    background-color: rgb(132, 125, 224);
+}
+
+#svgTrash {
+    border-radius: 20%;
+}
+
+.mostraTelaLista{ /* Mostra a Tela Lista de Nomes */
+    -webkit-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%); 
+}
