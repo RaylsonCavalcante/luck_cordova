@@ -497,7 +497,7 @@ $(document).ready(function(){
         // Pega o determinado item, e tranforma em string
         let string = JSON.stringify(banco[number])
 
-        // Tranfroma as strings em objetos
+        // Transforma as strings em objetos
         const item = JSON.parse(string)
 
         // Exibe na tela o nome sorteado
